@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Fauna</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Brand logo styling */
+    .brand-logo {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    /* Login/register icon styling */
+    .login-icon {
+      width: 40px;
+      height: auto;
+      margin-left: 15px;
+    }
+
+    /* Centered image */
+    .centered-image {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .overlay-container {
+      position: relative;
+    }
+
+    .small-image-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .small-image {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .overlay-title {
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      font-size: 4rem;
+      white-space: nowrap;
+    }
+
+    /* Charity Goal Section Styling */
+    .charity-goal-container {
+      position: relative;
+      background-image: url('https://www.arboroperations.com.au/wp-content/uploads/2021/08/pine-tree.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 50px 15px;
+      text-align: center;
+      height: 60vh;
+    }
+
+    .charity-goal-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+    }
+
+    .charity-goal-title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .charity-goal-description {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .donate-button {
+      font-size: 1.5rem;
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .donate-button:hover {
+      background-color: #e53e3e;
+    }
+
+    /* Information Section */
+    .info-number {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ff6347;
+    }
+
+    .info-description {
+      font-size: 1.2rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://ih1.redbubble.net/image.2981850844.0903/raf,360x360,075,t,fafafa:ca443f4786.jpg" alt="Project Fauna Logo" class="brand-logo">
+        Project Fauna
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-underline ms-auto">
+          <li class="nav-item"><a class="nav-link" href="HCI_Project.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="help.html">How to Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="jumbotron text-center bg-light p-0 overlay-container">
+    <img src="https://images.pexels.com/photos/1481581/pexels-photo-1481581.jpeg?cs=srgb&dl=pexels-megapixel-1481581.jpg&fm=jpg" alt="Forest Image" class="centered-image">
+    <div class="small-image-container">
+      <img src="https://static.wikitide.net/hololivewiki/thumb/6/6a/Ceres_Fauna_-_Portrait_VR_02.png/246px-Ceres_Fauna_-_Portrait_VR_02.png" alt="Ceres Fauna Portrait" class="small-image">
+      <h1 class="overlay-title">Project Fauna</h1>
+    </div>
+  </div>
+
+  <!-- Information Section -->
+  <div class="container py-5">
+    <h1 class="text-center mb-4"><b>Environmental Impact at a Glance</b></h1>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Deforestation for Human Activity</h5>
+            <p class="info-number">10,000 km²</p>
+            <p class="info-description">
+              Forests are cleared annually for urbanization, agriculture, and mining. This leads to habitat loss for countless species.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Carbon Emissions</h5>
+            <p class="info-number">5 Billion Tons</p>
+            <p class="info-description">
+              CO₂ emissions are released annually due to deforestation. Trees act as carbon sinks, and their loss accelerates global warming.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Forest Fires</h5>
+            <p class="info-number">200+ Incidents</p>
+            <p class="info-description">
+              Forest fires are reported each year, destroying thousands of hectares and affecting air quality worldwide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charity Goal Section -->
+  <div class="charity-goal-container">
+    <div class="charity-goal-overlay">
+      <h2 class="charity-goal-title">Our Goal: Save the Forests</h2>
+      <p class="charity-goal-description">
+        We're dedicated to combating deforestation, reducing carbon emissions, and protecting natural habitats for wildlife. Your contribution can make a big difference in preserving our planet for future generations.
+      </p>
+      <a href="donation.html" class="donate-button">Donate Now</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+  <footer class="bg-body-tertiary text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">About Us</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus vero voluptatem omnis
+            accusantium obcaecati explicabo sint quibusdam aspernatur, dolores facilis perspiciatis. Reprehenderit
+            suscipit ad maiores molestias saepe architecto quasi.
+          </p>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact</h5>
+          <ul class="list-unstyled">
+            <li>Email: info@projectfauna.com</li>
+            <li>Phone: +1 (123) 456-7890</li>
+            <li>Address: ... </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2024 Project Fauna. All rights reserved.
+    </div>
+  </footer>
+  
+ 
