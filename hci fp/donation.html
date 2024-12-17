@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Fauna</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Brand logo styling */
+    .brand-logo {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    /* Login/register icon styling */
+    .login-icon {
+      width: 40px;
+      height: auto;
+      margin-left: 15px;
+    }
+
+    /* Centered image */
+    .centered-image {
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .overlay-container {
+      position: relative;
+    }
+
+    .small-image-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .small-image {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .overlay-title {
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      font-size: 4rem;
+      white-space: nowrap;
+    }
+
+    /* Information Section */
+    .info-number {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ff6347; /* Emphasizing with a red color */
+    }
+
+    .info-description {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://ih1.redbubble.net/image.2981850844.0903/raf,360x360,075,t,fafafa:ca443f4786.jpg" alt="Project Fauna Logo" class="brand-logo">
+        Project Fauna
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-underline ms-auto">
+          <li class="nav-item"><a class="nav-link" href="HCI_Project.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="help.html">How to Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="jumbotron text-center bg-light p-0 overlay-container">
+    <img src="https://images.pexels.com/photos/1481581/pexels-photo-1481581.jpeg?cs=srgb&dl=pexels-megapixel-1481581.jpg&fm=jpg" alt="Forest Image" class="centered-image">
+    <div class="small-image-container">
+      <h1 class="overlay-title">Where To Donate</h1>
+    </div>
+  </div>
+
+
+  <!-- Places to Donate Section -->
+  <section class="container-fluid py-5" style="background-color: #e8f5e9;">
+    <h2 class="text-center mb-4" style="color: #2e7d32; font-family: 'Arial Black', sans-serif;">Places to Donate for the Trees</h2>
+    <div class="container">
+      <div class="row mb-5 g-4">
+        <!-- Arbor Day Foundation -->
+        <div class="col-md-4">
+          <div class="card shadow text-center card-hover">
+            <img src="https://www.arborday.org/themes/custom/propel/assets/img/adf/ADF-logo-forest.svg" 
+                alt="Arbor Day Foundation Logo" 
+                class="card-img-top img-fluid p-4" style="min-height: 200px; max-height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2e7d32; font-family: 'Arial Black', sans-serif;">Arbor Day Foundation</h5>
+              <p class="card-text">
+                Support global tree planting initiatives through the Arbor Day Foundation.
+              </p>
+              <a href="https://www.arborday.org" target="_blank" class="btn btn-success">Donate</a>
+            </div>
+          </div>
+        </div>
+        <!-- International Tree Foundation -->
+        <div class="col-md-4">
+          <div class="card shadow text-center card-hover">
+            <img src="https://images.squarespace-cdn.com/content/v1/6197abe80515bc685501422b/bb053c0a-ee44-4b54-a6cb-2794b00481c6/ITF_Logo_Primary_RGB%402x.png" 
+                alt="International Tree Foundation Logo" 
+                class="card-img-top img-fluid p-4" style="max-height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2e7d32; font-family: 'Arial Black', sans-serif;">International Tree Foundation</h5>
+              <p class="card-text">
+                Help protect forests and support tree planting worldwide.
+              </p>
+              <a href="https://www.internationaltreefoundation.org/" target="_blank" class="btn btn-success">Donate</a>
+            </div>
+          </div>
+        </div>
+        <!-- Trees for the Future -->
+        <div class="col-md-4">
+          <div class="card shadow text-center card-hover">
+            <img src="data:image/png;base64,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" 
+                alt="Trees for the Future Logo" 
+                class="card-img-top img-fluid p-4" style="max-height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2e7d32; font-family: 'Arial Black', sans-serif;">Trees for the Future</h5>
+              <p class="card-text">
+                Empower communities to grow sustainable forests and reduce hunger.
+              </p>
+              <a href="https://trees.org/" target="_blank" class="btn btn-success">Donate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom CSS for Hover Interaction -->
+  <style>
+    .card-hover:hover {
+      transform: scale(1.05); /* Slightly enlarge the card */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Add a deeper shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    }
+
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Initial transition */
+    }
+  </style>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+  <footer class="bg-body-tertiary text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">About Us</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, temporibus vero voluptatem omnis
+            accusantium obcaecati explicabo sint quibusdam aspernatur, dolores facilis perspiciatis. Reprehenderit
+            suscipit ad maiores molestias saepe architecto quasi.
+          </p>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact</h5>
+          <ul class="list-unstyled">
+            <li>Email: info@projectfauna.com</li>
+            <li>Phone: +1 (123) 456-7890</li>
+            <li>Address: ... </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2024 Project Fauna. All rights reserved.
+    </div>
+  </footer>
+  
+</body>
+</html>
